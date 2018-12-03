@@ -4,19 +4,21 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.5.1"
 
 gem "bootsnap", require: false
+gem "bootstrap-sass"
 gem "coffee-rails"
+gem "config"
+gem "devise"
+gem "faker"
 gem "jbuilder"
+gem "jquery-rails"
+gem "mysql2"
 gem "puma"
 gem "rails"
 gem "sass-rails"
+gem "simple_form"
 gem "turbolinks"
 gem "uglifier"
-gem "mysql2"
-gem "config"
-gem "simple_form"
-gem "bootstrap-sass"
 gem "will_paginate"
-gem "faker"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

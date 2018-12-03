@@ -1,11 +1,9 @@
 <% provide :title, t("home") %>
 
-<%= link_to "Add post", new_post_path %>
-
 <%= will_paginate %>
 
 <% if @posts.size == 0 %>
-  <h3><%= t ".content_1" %></h3>
+  <h2><%= t ".content_1" %></h2>
 <% else %>
   <%= render @posts %>
 <% end %>

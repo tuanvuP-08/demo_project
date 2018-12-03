@@ -1,0 +1,13 @@
+<% provide :title, @user.first_name %>
+
+<div class="row">
+  <aside class="col-md-4, col-md-offset-4">
+    <section class="user_info">
+      <h1>
+        <%= t(".content_1") %> <%= @user.first_name %>
+        <%= @user.last_name %> <br/>
+        <%= t(".content_2") %><%= @user.phone %>
+      </h1>
+    </section>
+  </aside>
+</div>

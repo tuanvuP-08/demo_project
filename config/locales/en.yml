@@ -1,5 +1,8 @@
 en:
 
+  # logo project in word
+  logo_in_word: "demo project"
+
   # base title
   base_title: "Demo Project"
 
@@ -13,10 +16,16 @@ en:
   new_post: "New post"
   post_detail: "Post detail"
   edit_post: "Edit post"
+  new_user: "New user"
+  log_in: "Login"
+  user_index: "All users"
+  edit_user: "Edit user info"
 
   # buttons
   create_btn: "Create"
   update_btn: "Update"
+  signup_btn: "Sign Up"
+  login_btn: "Login"
 
   # form labels
   post_title_label: "Post title"
@@ -38,3 +47,25 @@ en:
     post:
       edit: "Edit"
       delete: "Delete"
+  layouts:
+    header:
+      signup_btn: "Sign Up"
+      add_post_btn: "Add post"
+      sign_out_btn: "Sign out"
+      sign_in_btn: "Sign in"
+      signup_btn: "Sign up"
+      users_btn: "Users"
+      profile_btn: "My profile"
+      setting_btn: "Setting"
+  users:
+    index:
+      content_1: "List of users"
+      content_2: "There's no user at the current time"
+      tab_tit_id: "ID"
+      tab_tit_fname: "First name"
+      tab_tit_lname: "Last name"
+      tab_tit_email: "Email"
+      tab_tit_phone: "Phone"
+    show:
+      content_1: "Full name: "
+      content_2: "Phone: "
