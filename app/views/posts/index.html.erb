@@ -2,8 +2,12 @@
 
 <%= link_to "Add post", new_post_path %>
 
+<%= will_paginate %>
+
 <% if @posts.size == 0 %>
   <h3><%= t ".content_1" %></h3>
 <% else %>
   <%= render @posts %>
 <% end %>
+
+<%= will_paginate %>

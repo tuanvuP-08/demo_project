@@ -17,7 +17,8 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.all.sort_by_created_desc
+    @posts = Post.sort_by_created_desc.paginate page: params[:page],
+      per_page: Settings.number_of_posts_per_page
   end
 
   def show; end

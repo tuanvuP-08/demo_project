@@ -15,6 +15,8 @@ gem "mysql2"
 gem "config"
 gem "simple_form"
 gem "bootstrap-sass"
+gem "will_paginate"
+gem "faker"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
