@@ -1,0 +1,45 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22.4px;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
+}
+
+input {
+  width: 100%;
+}
+
+.invalid-feedback {
+  color: red;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.post_content_display {
+  border-style: solid;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+#post_btns {
+  text-align: center;
+}

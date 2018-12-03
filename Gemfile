@@ -12,6 +12,9 @@ gem "sass-rails"
 gem "turbolinks"
 gem "uglifier"
 gem "mysql2"
+gem "config"
+gem "simple_form"
+gem "bootstrap-sass"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

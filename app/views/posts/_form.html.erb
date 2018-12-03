@@ -1,0 +1,10 @@
+<div class="col-md-6 col-md-offset-3">
+  <%= simple_form_for @post do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <%= f.input :title, label: t("post_title_label") %>
+  <%= f.input :content %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+  <% end %>
+</div>
