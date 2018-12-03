@@ -1,0 +1,156 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,500);
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin background-tile {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+}
+
+@mixin border_background {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Navbar/navigation styles */
+.navbar {
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  border: none
+}
+
+/* universal */
+body {
+  padding-top: 60px;
+  font-family: 'Lora', serif;
+  background-color: #f5f5f5;
+}
+
+/*section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}*/
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22.4px;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
+}
+
+/* header */
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 27.2px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 6px;
+  font-weight: bold;
+  &:hover {
+    color: gray;
+    text-decoration: none;
+  }
+}
+
+/* miscellaneous */
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* forms */
+input, textarea, select, .uneditable-input {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 3px;
+  width: 100%;
+}
+
+input {
+  height: auto !important;
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.invalid-feedback {
+  color: red;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.new_post_form {
+  @include background-tile;
+}
+
+#post_btns {
+  text-align: center;
+  &:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+
+.posts_content {
+  @include border_background;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+#show_post {
+  @include border_background;
+}
+
+.btn-custom {
+  color: black;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  &:hover {
+    text-decoration: none;
+    color: #39CCCC;
+  }
+}
