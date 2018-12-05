@@ -4,7 +4,8 @@ class UsersController < ApplicationController
   def show; end
 
   def index
-    @users = User.all
+    @users = User.sort_by_created_desc.paginate page: params[:page],
+      per_page: Settings.number_of_users_per_page
   end
 
   private
