@@ -20,6 +20,8 @@ en:
   log_in: "Login"
   user_index: "All users"
   edit_user: "Edit user info"
+  new_comment: "New comment"
+  edit_comment: "Edit comment"
 
   # buttons
   create_btn: "Create"
@@ -36,7 +38,7 @@ en:
   delete_successfully: "Delete Successfully"
   update_successfully: "Update Successfully"
   delete_confirm_message: "Are you sure?"
-  denied_access: "Denied access"
+  access_denied: "Access denied"
 
   posts:
     new:
@@ -48,6 +50,8 @@ en:
     show:
       edit: "Edit"
       delete: "Delete"
+    post:
+      comment: "Comment"
   layouts:
     header:
       signup_btn: "Sign Up"
@@ -70,3 +74,12 @@ en:
     show:
       content_1: "Full name: "
       content_2: "Phone: "
+  comments:
+    new:
+      content_1: "Add new comment"
+    edit:
+      content_1: "Edit your comment"
+    comment:
+      edit: "Edit"
+      delete: "Delete"
+      content_1: "ago"

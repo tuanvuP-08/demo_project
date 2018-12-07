@@ -7,7 +7,16 @@
       <%= link_to t(".delete"), @post_path, method: :delete,
         data: {confirm: t("delete_confirm_message")} %>
     <% end %>
-    <p><%= @post.title %></p>
-    <%= @post.content %>
+    <p> <%= distance_of_time_in_words(Time.now - @post.created_at) %> </p>
+    <p> <%= @post.title %> </p>
+    <p> <%= @post.content %> </p>
+    <div class="row">
+      <div class="col-md-6", id="post_btns"> Like </div>
+      <div class="col-md-6", id="post_btns">
+        <%= link_to t(".comment"), new_post_comment_path(@post) %>
+      </div>
+    </div>
+    <hr>
+  <%= render @post.comments %>
   </div>
 </div>

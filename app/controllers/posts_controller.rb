@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :load_post, except: [:index, :new, :create]
-  before_action :correct_user, only: [:edit, :update]
   before_action :authenticate_user!, except: [:show, :index]
+  before_action :correct_user, only: [:edit, :update]
 
   def new
     @post = current_user.posts.build
@@ -58,11 +58,9 @@ class PostsController < ApplicationController
   end
 
   def correct_user
-    load_user
-    if @user.present?
-      redirect_to root_path unless current_user? @user
-    else
-      render file: "public/404.html", status: :not_found, layout: false
+    if @post.user_id != current_user.id
+      flash[:danger] = t "access_denied"
+      redirect_to @post
     end
   end
 end

@@ -23,7 +23,6 @@
             <li><%= link_to t(".sign_out_btn"), destroy_user_session_path, method: :delete %></li>
           </ul>
         </li>
-
       <% else %>
         <li><%= link_to t(".sign_in_btn"), new_user_session_path %></li>
         <li><%= link_to t(".signup_btn"), new_user_registration_path %></li>
@@ -31,4 +30,3 @@
     </ul>
   </div>
 </nav>
-

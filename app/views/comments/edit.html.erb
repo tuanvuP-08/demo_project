@@ -1,0 +1,13 @@
+<% provide :title, t("edit_comment") %>
+
+<h1><%= t ".content_1" %></h1>
+
+<div class="col-md-6 col-md-offset-3">
+  <%= simple_form_for([@post, @comment]) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <%= f.input :content %>
+
+  <%= f.submit t("update_btn"), class: "btn btn-primary" %>
+  <% end %>
+</div>
